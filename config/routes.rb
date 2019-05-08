@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
-  resources :microposts
-  root 'users#index'
+  root 'static_pages#home'
+  get 'static_pages/home'
+  get 'static_pages/help'
+  get 'static_pages/about'
+  get 'static_pages/contact'
   
+  resources :microposts
+
   get '/signup', to: 'users#new'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
   resources :users
-end
+end 
