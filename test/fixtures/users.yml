@@ -3,7 +3,9 @@
 one:
   name: Ruben Epong
   email: rubenjohne@gmail.com
+  password_digest:  $2a$10$O2myQfr.tQJtUbdG1EVkJ.5V1etz0Cy19rLiJoIg4TvjITEqvOsP2
 
 two:
   name: Foo Bar
   email: foobar@yahoo.com
+  password_digest:  $2a$10$O2myQfr.tQJtUbdG1EVkJ.5V1etz0Cy19rLiJoIg4TvjITEqvOsP2
