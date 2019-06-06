@@ -5,11 +5,15 @@ one:
   email: rubenjohne@gmail.com
   password_digest:  $2a$10$O2myQfr.tQJtUbdG1EVkJ.5V1etz0Cy19rLiJoIg4TvjITEqvOsP2
   admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 two:
   name: Foo Bar
   email: foobar@yahoo.com
   password_digest:  $2a$10$O2myQfr.tQJtUbdG1EVkJ.5V1etz0Cy19rLiJoIg4TvjITEqvOsP2
+  activated: true
+  activated_at: <%= Time.zone.now %>
   
   
 <% 30.times do |n| %>
@@ -17,5 +21,7 @@ user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 <% end %>
 
