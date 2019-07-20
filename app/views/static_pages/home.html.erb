@@ -1,3 +1,19 @@
-<%= provide(:title, "Home") %>
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% if logged_in? %>
+    <div>
+        <%= render 'shared/user_info'%>
+    </div>
+    <div>
+        <%= render 'shared/micropost_form' %>
+    </div>
+    <div>
+        <h3>Micropost Feed</h3>
+        <%= render 'shared/feed'%>
+    </div>
+<% else %>
+    <div>
+        <h1>Welcome to the Video app</h1>
+        <h2>This is the homepage</h2>
+        <%= link_to "Sign up now!", signup_path %>
+    </div>
+    
+<% end %>
