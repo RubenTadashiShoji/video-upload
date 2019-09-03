@@ -1,12 +1,22 @@
 <header>
     <a class="logo" href="/"><%= image_tag "logo.png", height: "43px" %></a>
-    <ul class="main-nav">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>        
-        
-    </ul>
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="collapse navbar-collapse" id="navigation-bar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><%= link_to "Home", root_path , class: "nav-link"%></li>
+              <li class="nav-item"><%= link_to "Help", help_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>        
+              <% if logged_in? %>
+                  <li><%= link_to "Log out", logout_path, method:"delete", class: "nav-link" %></li>
+              <% else %>
+                  <li><%= link_to "Log in", login_path, class: "nav-link" %></li>
+              <% end %>
+            </ul>
+        </div>
+    </nav>
+    
     <ul class="right-nav">
         <% if logged_in? %>
             <li><%= link_to "Log out", logout_path, method:"delete"%></li>
@@ -14,8 +24,7 @@
             <li><%= link_to "Log in", login_path %></li>
         <% end %>
     </ul>
-    <div class="hamburger-menu">
-        <%= image_tag "hamburger-menu.png", size: "24x24" %>
-    </div>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation-bar"></button>
     
 </header>
