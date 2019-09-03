@@ -1,15 +1,21 @@
 <header>
-    <div class="container">
-        <ul>
-            <nav>
-                <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Help", help_path %></li>
-                <% if logged_in? %>
-                    <li><%= link_to "Log out", logout_path, method:"delete"%></li>
-                <% else %>
-                    <li><%= link_to "Log in", login_path %></li>
-                <% end %>
-            </nav>
-        </ul>
+    <a class="logo" href="/"><%= image_tag "logo.png", height: "43px" %></a>
+    <ul class="main-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>        
+        
+    </ul>
+    <ul class="right-nav">
+        <% if logged_in? %>
+            <li><%= link_to "Log out", logout_path, method:"delete"%></li>
+        <% else %>
+            <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+    </ul>
+    <div class="hamburger-menu">
+        <%= image_tag "hamburger-menu.png", size: "24x24" %>
     </div>
+    
 </header>

@@ -6,13 +6,64 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <%= render 'layouts/header' %>
-     <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
-    <%= yield %>
-    <%= render 'layouts/footer' %>
+    <div class="mobile-nav">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>        
+        <% if logged_in? %>
+            <li><%= link_to "Log out", logout_path, method:"delete"%></li>
+        <% else %>
+            <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+    <main>
+      <%= render 'layouts/header' %>
+      <section id="hero">
+        <div class="container">
+          <div class="hero-text">
+            <!-- placeholder for hero image --> 
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="container">
+          <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%= message %></div>
+          <% end %>
+          <%= yield %>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="container">
+          <%= render 'layouts/footer' %>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
+
+
+<script type="text/javascript">
+  
+  $('.hamburger-menu').click(function() {
+    event.stopPropagation();  
+    if ($('main').hasClass('active')) {
+      $('main').removeClass('active');
+    } else {
+      $('main').addClass('active');
+    }
+  });
+  
+  $('main').click(function() {
+    $('main').removeClass('active');
+  });
+  
+</script>

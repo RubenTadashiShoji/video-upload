@@ -1,0 +1,131 @@
+/* line 4, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* line 11, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 200px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+/* line 20, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul {
+  margin: 0;
+  padding: 25px;
+}
+/* line 25, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+/* line 29, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  /* line 42, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  .mobile-nav {
+    display: block;
+  }
+
+  /* line 51, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .main-nav {
+    display: none;
+  }
+  /* line 55, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .right-nav {
+    display: none;
+  }
+  /* line 59, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .hamburger-menu {
+    display: block;
+  }
+  /* line 62, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .hamburger-menu img {
+    display: block;
+  }
+}
+/* MAIN SECTION */
+/* line 71, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main {
+  position: relative;
+  background-color: white;
+}
+
+/* END MAIN SECTION */
+/* line 79, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+/* line 82, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body .container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+/* line 87, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header {
+  width: 100%;
+  height: 70px;
+}
+/* line 91, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .logo {
+  float: left;
+}
+/* line 95, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav, body header .right-nav {
+  height: 70px;
+  float: left;
+  margin: 0;
+  padding: 0px 15px;
+  line-height: 70px;
+}
+/* line 103, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav li, body header .right-nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 107, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav li a, body header .right-nav li a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0px 15px;
+}
+/* line 117, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .right-nav {
+  float: right;
+}
+/* line 123, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero {
+  width: 100%;
+  height: 200px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
