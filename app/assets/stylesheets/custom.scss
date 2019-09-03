@@ -1,3 +1,7 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
 $break-small: 320px;
 $break-large: 1024px;
 
@@ -36,7 +40,10 @@ $break-large: 1024px;
     }
 }
 
+*/
+
 /* Tablet Styles */
+/*
 @media only screen and (max-width: $break-large) {
     
     .mobile-nav {
@@ -72,9 +79,9 @@ $break-large: 1024px;
         }
     }
 }
-
+*/
 /* MAIN SECTION */
-
+/*
 main {
     position: relative;
     background-color: white;
@@ -86,9 +93,9 @@ main {
     }
 }
 
-
+*/
 /* END MAIN SECTION */
-
+/*
 body {
     font-family:  Helvetica, Arial, sans-serif !important;
     padding: 30px;
@@ -161,3 +168,5 @@ body {
     }
 
 }
+
+*/
