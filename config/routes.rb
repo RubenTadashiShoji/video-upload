@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/help', to:'contacts#new'
   get '/about', to:'static_pages#about'
   get '/contact', to:'static_pages#contact'
+  get '/video_requirements', to:'static_pages#video_requirements' 
   
   resources :microposts
 
