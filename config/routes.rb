@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+
+  get 'contacts/create'
+
+  get 'contacts/thanks'
+
   get 'password_resets/new'
 
   get 'password_resets/edit'
 
   root 'static_pages#home'
   get 'static_pages/home'
-  get '/help', to:'static_pages#help'
+  get '/help', to:'contacts#new'
   get '/about', to:'static_pages#about'
   get '/contact', to:'static_pages#contact'
   
@@ -17,6 +23,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   resources :users
+  resources :contacts
   resources :account_activations, only: [:edit]
   resources :password_resets, only:[:new, :create, :edit, :update]
   resources :microposts, only:[:create, :destroy]

@@ -15,4 +15,10 @@ class UserMailerPreview < ActionMailer::Preview
     UserMailer.password_reset(user)
   end
 
+
+  def general_message
+    contact = Contact.new(name: "Contestant", email: "rubenjohne@gmail.com", message: "This is a test Message from the contact form")
+    UserMailer.general_message(contact)
+  end
+  
 end
