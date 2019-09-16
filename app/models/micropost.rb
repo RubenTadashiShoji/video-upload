@@ -10,8 +10,8 @@ class Micropost < ApplicationRecord
     
     # validates the size on an uploaded video
     def video_size
-        if video.size > 10.megabytes
-           errors.add(:video, "should be less than 10MB") 
+        if video.size > 25.megabytes
+           errors.add(:video, "should be less than 25MB") 
         end
     end
     
