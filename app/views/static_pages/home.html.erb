@@ -13,10 +13,12 @@
     <div>
         <h1>Welcome to the Video app</h1>
         <h2>This is the homepage</h2>
-        <%= link_to "Sign up now!", signup_path %> or 
-        <%  if !logged_in? %>
+        <div class="home_btn">
+          <%= link_to "Sign up now!", signup_path %> OR
+          <%  if !logged_in? %>
             <%= link_to "Log in", login_path %>
-        <% end %>
+          <% end %>
+        </div>
         <h2>to upload your video</h2>
     </div>
     
