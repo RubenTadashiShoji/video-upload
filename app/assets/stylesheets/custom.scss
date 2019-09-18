@@ -114,11 +114,14 @@ main {
          left: -200px;   
     }
     #content .container{
+      padding: 50px;
+      text-align: left;
+      
       P{
         font-size: 22px;
       }
       h1{
-        font-weight: 700;text-transform : uppercase;font-size: 30px;
+        font-weight: 700;text-transform : uppercase;font-size: 30px; text-align: center;
       }
       h2{
         text-transform : uppercase;font-size: 20px;
