@@ -159,6 +159,34 @@ main {
 
       }
       
+      .login {
+                
+        form {
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          
+          .field {
+            margin: 0 auto 10px auto;
+            
+            span {
+              text-transform: none;
+              font-size: .75em;
+            }
+          }
+          
+          input {
+            text-transform: uppercase;
+          }
+
+        }
+        
+        p {
+          text-align: center;
+        }
+      }
+      
       .alert-danger{background: #ebc0ca; padding:10px;}
       letter-spacing:2px;
       a{
