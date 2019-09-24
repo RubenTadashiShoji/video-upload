@@ -105,7 +105,7 @@ main {
     position: relative;
     left: 0px;
     transition: all 0.2s ease-in-out;
-    background: url("bj.jpg") no-repeat center center;
+    background: #fff;
     background-size: cover;
     max-width:980px;
     margin:0 auto;
@@ -114,14 +114,18 @@ main {
          left: -200px;   
     }
     #content .container{
-      padding: 50px;
-      text-align: left;
-      
+      .signupnow{
+        text-align: center;
+        font-size: 24px;
+        a{
+          display: inline-block; margin:0;
+        }
+      }
       P{
-        font-size: 22px;
+        font-size: 22px;text-align: left;
       }
       h1{
-        font-weight: 700;text-transform : uppercase;font-size: 30px; text-align: center;
+        font-weight: 700;text-transform : uppercase;font-size: 30px;
       }
       h2{
         text-transform : uppercase;font-size: 20px;
@@ -134,6 +138,10 @@ main {
             font-weight: bolder;font-size: 28px;
           }
         }
+      }
+      
+      .text {
+        letter-spacing: 0;
       }
       
       .contact {
@@ -174,6 +182,10 @@ main {
               text-transform: none;
               font-size: .75em;
             }
+            
+            a {
+              margin:0;
+            }
           }
           
           input {
@@ -190,9 +202,9 @@ main {
       .alert-danger{background: #ebc0ca; padding:10px;}
       letter-spacing:2px;
       a{
-        color: #000;
+        color: #222;
         text-decoration: none;
-        border-bottom: 1px solid #111;
+        border-bottom: 1px solid #222;
         margin:0 1em;
         padding-bottom: 3px;text-transform : uppercase;font-size: 24px;
       }
@@ -212,25 +224,36 @@ main {
           background: #ebc0ca;
           padding:0 1em 1em;
           text-align: left;
+          margin-bottom: 2em;
           ul{
             margin:0 2em;
           }
         }
         .field{
-          float:left; width:36%; margin:0em 7% 2em;
+          float:left; width:36%; margin:0em 7% 2em;text-align: left;
           .checkbox.inline input{
             display: inline;width:auto;
           }
-          label{
-            width:100%;display: inline-block;text-align: left;line-height: 1.8em;text-transform : uppercase;
+          label.checkbox.inline{
+            color: #757575;
           }
+          label{
+            width:100%;text-align: left;line-height: 1.8em;text-transform : uppercase;
+          }
+
           input{
             width:100%;font-size: 22px;line-height: 2.4em;background: none;
-            border: 1px solid #656262;text-align: center;color:#555;text-transform : uppercase;
+            border: 1px solid #656262;text-align: center;color:#222;text-transform : uppercase;
+          }
+          input::-webkit-input-placeholder{
+            color: #656262;
           }
           .forgotbtn{
             text-align: center;line-height: 2em;
-            a{ margin:0;}
+            a{ margin:0;
+            color: #656262;
+              border-color:#656262;
+            }
           }
         }
         .actions{
@@ -279,7 +302,7 @@ body {
                 a {
                     text-decoration: none;
                     font-weight:bolder;
-                    font-size: 20px;
+                    font-size: 24px;
                     padding: 0px 15px;
                     color:#000;
                   text-transform : uppercase;
@@ -314,9 +337,9 @@ body {
               }
             }
             h2{
-              font-size: .9em;margin:0;color:#fff;display: flex;align-items: center;
+              font-size: .8em;margin:0;color:#222;display: flex;align-items: center;
               span{
-                display: inline-block; flex: 1; border-bottom: 1px solid #fff;height: 0;vertical-align: middle;
+                display: inline-block; flex: 1; border-bottom: 1px solid #ccc;height: 0;vertical-align: middle;
               }
               b{margin:0 .6em}
             }
