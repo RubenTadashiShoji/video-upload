@@ -115,6 +115,26 @@ main {
     }
     #content .container{
       
+      .login {
+        form {
+          display: flex;  
+          flex-direction: column;
+            .field {
+              margin: 0 auto;
+              a {
+                margin: 0;
+              }
+              span {
+                width: 100%;
+                font-size: .75em;
+              }
+            }
+        }
+        p {
+          text-align: center;
+        }  
+      }
+      
       .contact {
         form {
           display: flex;
