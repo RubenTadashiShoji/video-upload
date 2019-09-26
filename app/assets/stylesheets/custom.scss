@@ -200,12 +200,20 @@ main {
       h2{
         text-transform : uppercase;font-size: 20px;
       }
-      .home_btn {
-        padding: 15px 0;font-size: 22px;
-        a{
-          font-weight: bolder;font-size: 28px;
+      .home {
+        .home-msg {
+          p {
+            text-align:center;
+          }
+        }
+        .home_btn {
+          padding: 15px 0;font-size: 22px;
+          a{
+            font-weight: bolder;font-size: 28px;
+          }
         }
       }
+      .alert-info{background: #f5e945; padding:10px; MARGIN-BOTTOM:2EM; font-size:2em}
       .alert-danger{background: #ebc0ca; padding:10px; MARGIN-BOTTOM:2EM; font-size:2em}
       .alert-success{background: #17eb57; padding:10px; MARGIN-BOTTOM:2EM; font-size:2em}
       letter-spacing:2px;

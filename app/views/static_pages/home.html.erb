@@ -13,8 +13,15 @@
     </div>
 <% else %>
     <div class="home">
-        <h1>Welcome to the Video app</h1>
-        <h2>This is the homepage</h2>
+        <div class="home-msg">
+            <p align="center"><strong>SUBMISSION DEADLINE: 10/31/19,  11:59PM (PST)</strong></p>
+            <p align="center">We know all women who wear Tadashi Shoji are  filled with joie de vivre. From weddings to parties to nights out, you enchant  life with your style and spirit. We&rsquo;ve heard rumors of greatness, including the  win-at-all-cost bouquet-catchers, the (cat)walk-off competition victors, and  the first-time singers of mic-dropping karaoke solos.  <br>
+              <strong>And now, we want you to show us!</strong></p>
+            <p align="center">We&rsquo;re searching for videos that capture how  you live in the moment while wearing Tadashi Shoji. Show us the memorable. Show  us the unexpected. Show us the unrepeatable.</p>
+            <p align="center"><strong>Share your &ldquo;Living the Moment&rdquo;  video and you could</strong><br>
+              <strong>WIN A $1500 SHOPPING SPREE</strong></p>
+              <p align="center">TO BEGIN THE SUBMISSION PROCESS:</p>
+            </div>          
         <div class="home_btn">
           <%= link_to "Sign up now!", signup_path %> OR
           <%  if !logged_in? %>
