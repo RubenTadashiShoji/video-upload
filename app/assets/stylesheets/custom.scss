@@ -105,8 +105,6 @@ main {
     position: relative;
     left: 0px;
     transition: all 0.2s ease-in-out;
-    background: asset-url("bj.jpg");
-    background-size: cover;
     max-width:980px;
     margin:0 auto;
     min-height:100%;
@@ -286,6 +284,9 @@ main {
 
 body {
     font-family: 'simhei_1',Helvetica, Arial, sans-serif !important;
+    background: asset-url("bj.jpg");
+    background-size: cover;
+
 
     .container {
 

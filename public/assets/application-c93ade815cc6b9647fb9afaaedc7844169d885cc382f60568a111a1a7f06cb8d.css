@@ -1,0 +1,506 @@
+@font-face {
+  font-family: 'simhei_1';
+  src: url(/assets/SimHei-6625b9b91a5054faa413b69d171020c3f6d9a872345d8a3c5e3df61809291b7f.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'simsun_1';
+  src: url(/assets/SIMSUN-ca4da082cd970f0c8abaa79f213ddcbc475f7b5afabcb81b385998f9ebfbb53f.ttf) format("truetype");
+}
+/* line 11, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* line 14, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* line 21, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+/* line 30, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul {
+  margin: 0;
+  padding: 25px;
+}
+/* line 35, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+/* line 39, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+.mobile-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 54, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  main #content .container form .field {
+    clear: both;
+    width: -webkit-fill-available !important;
+  }
+  /* line 57, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  main #content .container form .field input {
+    width: 100% !important;
+  }
+}
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  /* line 70, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  .mobile-nav {
+    display: block;
+  }
+
+  /* line 76, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .main-nav {
+    display: none;
+  }
+  /* line 80, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .right-nav {
+    display: none;
+  }
+  /* line 84, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .hamburger-menu {
+    display: block;
+  }
+  /* line 87, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  header .hamburger-menu img {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* line 96, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+  footer .footer-nav {
+    display: none;
+  }
+}
+/* MAIN SECTION */
+/* line 104, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main {
+  position: relative;
+  left: 0px;
+  transition: all 0.2s ease-in-out;
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+/* line 111, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main.active {
+  left: -200px;
+}
+/* line 114, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container {
+  letter-spacing: 2px;
+}
+/* line 116, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .microposts-list {
+  text-align: left;
+}
+/* line 120, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container div.pagination {
+  display: flex;
+  justify-content: center;
+}
+/* line 125, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container div.pagination ul.pagination {
+  list-style: none;
+}
+/* line 128, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container div.pagination ul.pagination li {
+  float: left;
+}
+/* line 135, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .new_micropost textarea {
+  width: 50%;
+  height: 10em;
+}
+/* line 142, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .login form {
+  display: flex;
+  flex-direction: column;
+}
+/* line 145, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .login form .field {
+  margin: 0 auto;
+}
+/* line 147, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .login form .field a {
+  margin: 0;
+}
+/* line 150, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .login form .field span {
+  width: 100%;
+  font-size: .75em;
+}
+/* line 156, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .login p {
+  text-align: center;
+}
+/* line 162, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 167, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .contact form .field {
+  margin: 0 auto;
+}
+/* line 170, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .contact form .field textarea {
+  width: 100%;
+  height: 10em;
+}
+/* line 176, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .contact form .actions {
+  margin: 10px auto;
+}
+/* line 179, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .contact form .actions input {
+  width: 100%;
+}
+/* line 185, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .signupnow {
+  text-align: center;
+  font-size: 24px;
+}
+/* line 188, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .signupnow a {
+  display: inline-block;
+  margin: 0;
+}
+/* line 192, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container P {
+  font-size: 22px;
+  text-align: left;
+}
+/* line 195, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+/* line 198, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/* line 203, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .home .home-msg p {
+  text-align: center;
+}
+/* line 207, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .home .home_btn {
+  padding: 15px 0;
+  font-size: 22px;
+}
+/* line 209, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .home .home_btn a {
+  font-weight: bolder;
+  font-size: 28px;
+}
+/* line 214, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .alert-info {
+  background: #f5e945;
+  padding: 10px;
+  MARGIN-BOTTOM: 2EM;
+  font-size: 2em;
+}
+/* line 215, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .alert-danger {
+  background: #ebc0ca;
+  padding: 10px;
+  MARGIN-BOTTOM: 2EM;
+  font-size: 2em;
+}
+/* line 216, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container .alert-success {
+  background: #17eb57;
+  padding: 10px;
+  MARGIN-BOTTOM: 2EM;
+  font-size: 2em;
+}
+/* line 218, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  margin: 0 1em;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+/* line 225, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form {
+  font-weight: 100;
+  margin-top: 2em;
+  font-family: simhei_1 !important;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+/* line 227, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form #password_reset_email {
+  width: 30%;
+  font-size: 24px;
+  line-height: 2em;
+  background: none;
+  border: 1px solid #656262;
+  text-align: center;
+  color: #555;
+  margin: 0 .5em;
+}
+/* line 231, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .forgotsub {
+  font-size: 24px;
+  line-height: 2em;
+  background: #555;
+  border: 1px solid #555;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  padding: 0 1em;
+}
+/* line 235, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form #error_explanation {
+  font-size: 18px;
+  background: #ebc0ca;
+  padding: 0 1em 1em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+/* line 241, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form #error_explanation ul {
+  margin: 0 2em;
+}
+/* line 245, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field {
+  float: left;
+  width: 36%;
+  margin: 0em 7% 2em;
+  text-align: left;
+}
+/* line 247, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field .checkbox.inline input {
+  display: inline;
+  width: auto;
+}
+/* line 250, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field label.checkbox.inline {
+  display: block !important;
+  color: #757575;
+}
+/* line 253, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field label {
+  width: 100%;
+  text-align: left;
+  line-height: 1.8em;
+  text-transform: uppercase;
+}
+/* line 257, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field input {
+  width: 100%;
+  font-size: 22px;
+  line-height: 2.4em;
+  background: none;
+  border: 1px solid #656262;
+  text-align: center;
+  color: #222;
+  text-transform: uppercase;
+}
+/* line 261, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field input::-webkit-input-placeholder {
+  color: #656262;
+}
+/* line 264, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field .forgotbtn {
+  text-align: center;
+  line-height: 2em;
+}
+/* line 266, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .field .forgotbtn a {
+  margin: 0;
+  color: #656262;
+  border-color: #656262;
+}
+/* line 272, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .actions {
+  clear: both;
+}
+/* line 274, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+main #content .container form .actions input {
+  width: 40%;
+  font-size: 22px;
+  line-height: 2.4em;
+  background: #171717;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin-bottom: 2em;
+}
+
+/* END MAIN SECTION */
+/* line 285, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'simhei_1',Helvetica, Arial, sans-serif !important;
+  background: url(/assets/bj-6fb00dc8bfe3299d3ac54ecdf764f6ccdc53562feeacfe2d8d45a66cae3350ba.jpg);
+  background-size: cover;
+}
+/* line 291, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body .container {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 297, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header {
+  width: 100%;
+  height: 70px;
+}
+/* line 300, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .logo {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+}
+/* line 306, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav, body header .right-nav {
+  height: 70px;
+  float: left;
+  margin: 0;
+  padding: 0px 15px;
+  line-height: 70px;
+}
+/* line 314, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav li, body header .right-nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 318, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav li a, body header .right-nav li a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 24px;
+  padding: 0px 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-right: 1px solid #111;
+}
+/* line 330, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .main-nav li:last-child a, body header .right-nav li:last-child a {
+  border: none;
+}
+/* line 337, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body header .right-nav {
+  float: right;
+}
+/* line 343, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero {
+  width: 100%;
+  clear: both;
+}
+/* line 347, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text {
+  font-size: 50px;
+  font-family: simhei_1 !important;
+  padding: 1em 0;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+/* line 349, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h1 {
+  margin: 0;
+}
+/* line 351, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h1 span {
+  letter-spacing: 1px;
+}
+/* line 355, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2:before, body #hero .container .hero-text h2:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid white;
+  top: 0.5em;
+  width: 600px;
+}
+/* line 363, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2:before {
+  right: 100%;
+  margin-right: 15px;
+}
+/* line 367, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2:after {
+  left: 100%;
+  margin-left: 15px;
+}
+/* line 372, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2 {
+  font-size: .8em;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+/* line 374, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2 span {
+  display: inline-block;
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  height: 0;
+  vertical-align: middle;
+}
+/* line 377, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body #hero .container .hero-text h2 b {
+  margin: 0 .6em;
+}
+/* line 385, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body footer .footer-nav {
+  text-align: center;
+  padding: 0;
+}
+/* line 389, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body footer .footer-nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 393, /home/ubuntu/environment/video/app/assets/stylesheets/custom.scss */
+body footer .footer-nav li a {
+  text-decoration: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
