@@ -1,10 +1,10 @@
 @font-face{
   font-family: 'simhei_1';
-  src:url('SimHei.ttf') format('truetype')
+  src:asset-url('SimHei.ttf') format('truetype')
 }
 @font-face{
   font-family: 'simsun_1';
-  src:url('SIMSUN.ttf') format('truetype')
+  src:asset-url('SIMSUN.ttf') format('truetype')
 }
 $break-small: 320px;
 $break-large: 1024px;
@@ -277,7 +277,7 @@ main {
 /* END MAIN SECTION */
 
 body {
-    font-family: 'Saira Extra Condensed',Helvetica, Arial, sans-serif !important;
+    font-family: 'simhei_1',Helvetica, Arial, sans-serif !important;
 
     .container {
 
