@@ -19,7 +19,7 @@
   <tbody>
     <% @microposts.each do |micropost| %>
       <tr>
-        <td><%= video_tag micropost.video.url if micropost.video? %></td>
+        <td><%= video_tag micropost.video.url, height:"100px" if micropost.video? %></td>
         <td><%= micropost.content %></td>
         <td><%= micropost.user.name %></td>
         <td><%= micropost.user.email %></td>
