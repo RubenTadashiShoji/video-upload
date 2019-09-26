@@ -115,6 +115,27 @@ main {
     }
     #content .container{
       
+      div.pagination {
+        
+        display: flex;
+        justify-content: center;
+        
+        ul.pagination {
+          list-style: none;
+          
+          li {
+            float:left;
+          }
+        }
+      }
+      
+      .new_micropost {
+        textarea {
+          width: 50%;
+          height: 10em;
+        }
+      }
+      
       .login {
         form {
           display: flex;  

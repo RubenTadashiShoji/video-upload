@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
   <h1><%= @user.name %></h1>
 </p>
 
@@ -9,10 +8,15 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+<p>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+
+</p>
 
 <div>
   <% if @user.microposts.any? %>
-    <h3>Microposts (<%= @user.microposts.count %>)</h3>
+    <h3>Posts (<%= @user.microposts.count %>)</h3>
     <ol>
       <%= render @microposts %>
     </ol>
@@ -20,5 +24,3 @@
   <% end %>
 </div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
