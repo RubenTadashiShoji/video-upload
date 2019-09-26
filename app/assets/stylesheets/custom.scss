@@ -115,6 +115,10 @@ main {
     }
     #content .container{
       
+      .microposts-list {
+        text-align:left;
+      }
+      
       div.pagination {
         
         display: flex;
