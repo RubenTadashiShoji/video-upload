@@ -11,15 +11,28 @@
     </div>
 <% else %>
     <div class="home">
-        <h1>Welcome to the Video app</h1>
-        <h2>This is the homepage</h2>
+        
+        <h2>Submission Deadline: 10/31/19, 11:59pm (PST)</h2>
+        
+        <p>We know all women who wear Tadashi Shoji are filled with joie de vivre.  From weddings to parties to nights out, you enchant life with your style and spirit.  We've heard rumors of greatness, including the win-at-all-cost bouquet-catchers, the (cat)walk-off competition victors, and the first-time singers of mic-dropping karaoke solos.</p>
+        
+        <h2>And now, we want you to show us!</h2>
+        
+        <p>We're searching for videos that capture how you live in the moment while wearing Tadashi Shoji.  Show us the memorable.  Show us the unexpected.  Show us the unrepeatable.</p>
+
+        <h2>Share your "Living The Moment" video and you could</h2>
+
+        <h2><span class="emph">Win a $1500 Shopping Spree</span></h2>
+
+        <p class="submission-begin">TO BEGIN THE SUBMISSION PROCESS:</p>
+
         <div class="home_btn">
-          <%= link_to "Sign up now!", signup_path %> OR
+          <%= link_to "Sign up", signup_path %> OR
           <%  if !logged_in? %>
             <%= link_to "Log in", login_path %>
           <% end %>
         </div>
-        <h2>to upload your video</h2>
+    <!--    <h2>to upload your video</h2>   -->
     </div>
     
 <% end %>
