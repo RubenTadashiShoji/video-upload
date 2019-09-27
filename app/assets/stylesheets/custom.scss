@@ -16,6 +16,7 @@ html,body{
     position: absolute;
     right: 15px;
     top: 15px;
+    z-index: 1;
 }
 
 .mobile-nav {
@@ -26,7 +27,9 @@ html,body{
     height:100%;
     right:0;
     top:0;
-    
+    z-index: 1;
+    opacity: .95;
+
     ul {
         
         margin: 0;
@@ -64,6 +67,47 @@ html,body{
 
 
 }
+
+
+
+@media only screen and (max-width: 616px) {
+  body #hero .container .hero-text {
+    /*font-size: 2em !important;*/
+  }
+  main #content .container {
+    .official-rules, .video-requirements {
+      h1 {
+        font-size: 1em !important;
+      }
+      h2 {
+        font-size: 0.8em !important;
+      }
+    }
+  } 
+
+}
+
+@media only screen and (max-width: 695px) {
+  main #content .container {
+    .official-rules, .video-requirements {
+      h1 {
+        font-size: 1.5em !important;
+      }
+      h2 {
+        font-size: 0.8em !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  body #hero .container .hero-text {
+    font-size: 2em !important;
+  }
+}
+
+
+
 /* Tablet Styles */
 @media only screen and (max-width: $break-large) {
     
@@ -97,6 +141,45 @@ html,body{
             display:none;
         }
     }
+
+    .official-rules, .video-requirements {
+      padding: 0 40px;
+    }
+    main #content .container {
+
+      .official-rules, .video-requirements {
+        p {
+          font-size: 0.8em !important;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+        h2 {
+          font-size: 1.15em;
+        }
+      }
+    }
+  
+}
+
+/* default full screen */
+@media only screen and (min-width: 1025px) {
+  main #content .container {
+
+    .official-rules, .video-requirements {
+
+      p {
+        font-size: initial !important;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1.25em;
+      }
+    }
+  }
 }
 
 /* MAIN SECTION */
@@ -120,7 +203,7 @@ main {
           padding-left: 0;
         }
         p {
-          font-size: initial !important;
+          /*font-size: initial !important;*/
 
           span {
             font-weight: bold;
@@ -167,7 +250,7 @@ main {
               /*margin: 0 auto;*/
               a {
                 margin: 0;
-                font-size: 0.8em;
+                font-size: 0.5em;
                 font-weight: lighter;                
               }
               span {
@@ -235,7 +318,7 @@ main {
         /*font-weight: 700;text-transform : uppercase;font-size: 30px;*/
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 2.5em;
+        /*font-size: 2.5em;*/
         text-transform: uppercase;
         /* font-size: 20px; */
         font-weight: bold;
@@ -244,7 +327,7 @@ main {
       h2{
       /*  text-transform : uppercase;font-size: 20px;  */
       text-transform: uppercase;
-      font-size: 20px;
+      /*font-size: 20px;*/
       font-weight: bold;
       font-family: "Futura";
 
