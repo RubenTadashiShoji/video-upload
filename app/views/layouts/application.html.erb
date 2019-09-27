@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div class="mobile-nav">
+    <div class="mobile-nav" id="menu-mobile--dropdown" style="display: none;">
       <ul>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
@@ -57,17 +57,25 @@
 
 <script type="text/javascript">
   
+var mobileMenuButton    = $('#menu-mobile--button'),
+    mobileMenuDropdown  = $('#menu-mobile--dropdown');
+
   $('.hamburger-menu').click(function() {
     event.stopPropagation();  
+
+    $(mobileMenuDropdown).css('display') == 'none' ? mobileMenuDropdown.show() : mobileMenuDropdown.hide();
+/*
     if ($('main').hasClass('active')) {
       $('main').removeClass('active');
     } else {
       $('main').addClass('active');
     }
+*/  
   });
   
   $('main').click(function() {
-    $('main').removeClass('active');
+    // $('main').removeClass('active');
+    mobileMenuDropdown.hide();
   });
   
 </script>
