@@ -117,12 +117,15 @@ main {
     /* font-family: "Helvetica Neue"; */
       .login {
         form {
-          display: flex;  
-          flex-direction: column;
+          display: inline-block;  
+          font-family: Futura !important;
+/*          flex-direction: column; */
             .field {
-              margin: 0 auto;
+/*              margin: 0 auto; */
               a {
                 margin: 0;
+                font-size: 0.8em;
+                font-weight: lighter;
               }
               span {
                 width: 100%;
@@ -137,24 +140,31 @@ main {
       
       .contact {
         form {
-          display: flex;
+          /*display: flex;*/
           flex-direction: column;
           justify-content: center;
           
             .field {
-              margin: 0 auto;
+              /*margin: 0 auto;*/
               
               textarea {
-                width: 100%;
-                height: 10em;
+                width: 93%;
+                height: 20em;
+                background: none;
+                padding: 20px 30px;
+                font-size: 1em;
               }
+            }
+
+            .field.message {
+              width: 86%;
             }
             
             .actions {
               margin: 10px auto;
               
               input {
-                width: 100%;
+                /*width: 100%;*/
               }
             }
         }
@@ -177,7 +187,14 @@ main {
 
       }
       h1{
-        font-weight: 700;text-transform : uppercase;font-size: 30px;
+        /*font-weight: 700;text-transform : uppercase;font-size: 30px;*/
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        /* font-size: 20px; */
+        font-weight: bold;
+        font-family: "Futura";
       }
       h2{
       /*  text-transform : uppercase;font-size: 20px;  */
@@ -229,7 +246,10 @@ main {
           }
         }
         .field{
-          float:left; width:36%; margin:0em 7% 2em;text-align: left;
+          float:left; 
+          width:36%; 
+          margin:0em 7% 2em;
+          text-align: center;
           .checkbox.inline input{
             display: inline;width:auto;
           }
@@ -237,7 +257,10 @@ main {
             display: block!important;color: #757575;
           }
           label{
-            width:100%;text-align: left;line-height: 1.8em;text-transform : uppercase;
+            width:100%;
+            /*text-align: left;*/
+            line-height: 1.8em;
+            text-transform : uppercase;
           }
 
           input{
@@ -258,7 +281,25 @@ main {
         .actions{
           clear: both;
           input{
-            width:40%;font-size: 22px;line-height: 2.4em;background: #171717;text-align: center;color:#fff;border:none;margin-bottom: 2em;
+            width: 40%;
+            font-size: 1.2em;
+            line-height: 2.4em;
+            background: #171717;
+            text-align: center;
+            color: #fff;
+            border: none;
+            margin-bottom: 2em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: lighter;
+          }
+          a {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            font-family: "Helvetica Neue";
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
           }
         }
       }
@@ -347,6 +388,7 @@ body {
               text-shadow: 1px 1px white;
               line-height: 0.5em;
               margin-top: 0.5em;
+
               span{
                 letter-spacing: 1px;
               }
@@ -400,4 +442,9 @@ p.submission-begin {
   font-size: 1.1em !important;
   margin-top: 2em;
 
+}
+.field.remember {
+  width: 100% !important;
+  display: block;
+  margin: 0px auto !important;
 }
