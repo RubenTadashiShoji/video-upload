@@ -12,26 +12,35 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+<!--    <%= f.label :name %>  -->
     <%= f.text_field :name,PlaceHOLDER:'NAME' %>
   </div>
 
   <div class="field">
-    <%= f.label :email %>
+<!--    <%= f.label :email %> -->
     <%= f.text_field :email,PlaceHOLDER:'EMAIL' %>
   </div>
   
   <div class="field">
-    <%= f.label :password %>
+<!--    <%= f.label :password %>  -->
     <%= f.password_field :password,PlaceHOLDER:'PASSWORD' %>
   </div>
   
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %>
+<!--    <%= f.label :password_confirmation, "Confirmation" %> -->
     <%= f.password_field :password_confirmation,PlaceHOLDER:'CONFIRM PASSWORD' %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
+    <a href="javascript:history.back()">Go Back</a>
   </div>
+
+
+<!-- quick workaround -- not able to find where this value is set in the markup -->
+  <script>
+    $('form#new_user div.actions input').val("Continue");
+  </script>
+
+
 <% end %>
